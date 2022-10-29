@@ -20,7 +20,7 @@ class Solution:
 
         for r in range(1, len(grid)):
             for c in range(1, len(grid[0])):
-                grid[r][c] = min(grid[r-1][c], grid[r][c-1]) + grid[r][c]
+                grid[r][c] = min(grid[r - 1][c], grid[r][c - 1]) + grid[r][c]
 
         return grid[-1][-1]
 
